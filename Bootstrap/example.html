@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<style type="text/css">	
+.jumbotron {
+background-image: url("neto.jpg");
+background-size: cover;
+}
+#email
+{
+
+width: 300px;
+
+}
+
+#footer
+{
+background-color: aqua;
+padding-top: 50px;
+margin-top: 50px;
+text-align: center;
+padding-bottom: 50px;
+
+}
+/* #playstore
+{
+height: 200px;
+width: 1200px;
+
+} */
+
+body
+{
+
+position: relative;
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+	<a class="navbar-brand" href="#">MyApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navbar-collapse">
+      <li class="nav-item">
+        <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">Download the App</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 pull-lg-right">
+      <input class="form-control mr-sm-2" type="text" placeholder="Email">
+      <input type="password" name="password" class="form-control mr-sm-2" placeholder="Password">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="jumbotron" id="jumbotron">
+  <h1 class="display-4" style="text-align:center;">My Awesome App</h1>
+  <p class="lead" style="text-align:center;">This is why you should download the fanastic App</p>
+  <hr class="my-4">
+  <p style="text-align:center;">Want to know more?Join our Mailing List</p>
+   <p class="lead">
+   	<div class="form-group">
+   	<form class="form-inline my-2 my-lg-0 justify-content-center">
+     <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">@</div>
+    </div>
+    <input type="text" class="form-control" id="email" placeholder="Email">
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+     </form>
+     </div>
+     </div>
+
+    <h1 style="text-align: center;">Why This App is Awesome</h1>
+    <p  class="lead" style="text-align: center;">Summary,Once Again or our App Awesomeness</p>
+
+   <div class="container" id="about">
+   <div class="form-inline">  
+   <div class="card col-sm-3" style="width: 18rem;">
+  <img class="card-img-top" src="tramp.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-anchor"></i>Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card col-sm-3" style="width: 18rem;">
+  <img class="card-img-top" src="tramp.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-anchor"></i>Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card col-sm-3" style="width: 18rem;">
+  <img class="card-img-top" src="tramp.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-anchor"></i>Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card col-sm-3" style="width: 18rem;">
+  <img class="card-img-top" src="tramp.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-anchor"></i>Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+</div>
+</div>
+<div  id="footer">	
+<h2>Download the app!</h2><br/>
+<p class="lead">Really,why should I download this app??</p><br/>
+<p class="lead"><a href="https://play.google.com/store?hl=en"><img id ="playstore" src="PlayStore.png"></img></a></p>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hlgOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+</body>
+</html>
