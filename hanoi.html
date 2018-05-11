@@ -1,0 +1,23 @@
+<html>
+<script>
+var write = function(String)
+{
+document.write(String);	
+}
+
+var i=0;
+
+
+var hanoi = function(disc,src,aux,dst)
+{
+if(disc>0)
+{	
+hanoi(disc-1,src,dst,aux);
+write("Move Disc "+ disc +"from "+ src + " to "+ dst +"<br/>");
+hanoi(disc-1,aux,src,dst); 
+};
+}
+
+hanoi(4,"src","aux","dst");
+</script>
+</html>
